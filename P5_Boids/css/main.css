@@ -1,0 +1,39 @@
+body
+{
+    margin:         0;          /* no margins */
+    overflow:       hidden;     /* hide scrollbars */
+    color:          black;
+    text-align:     center;
+}
+
+h1
+{
+    position:       absolute;    /* better that default of static - more control */
+    width:          100%;       /* 100% of parent element (the body here)*/
+    z-index:        1;          /* -1 is behind +1 above default "stack order" default is (0) */
+                            /* larger Z is drawn last and is thus above smaller Zs" */
+    /* font-size:      1.5rem;  MH: Like large font */
+}
+
+a
+{
+    color: darkblue;
+}
+
+a:hover
+{
+    color: darkred;
+}
+
+
+#scene-container
+{
+    position:       absolute;       /* better that default of static - more control */
+    width:          100%;
+    height:         100%;
+}
+/*
+canvas {
+    display: block;
+}
+*/
